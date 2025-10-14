@@ -1,8 +1,13 @@
+"use client";
+
+import React from "react";
+
 export default function Home() {
   const MODEL_SRC = "/models/model.glb";
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-black">
+      {/* @ts-ignore */}
       <model-viewer
         src={MODEL_SRC}
         ar
@@ -19,6 +24,7 @@ export default function Home() {
         >
           View in AR
         </button>
+        {/* @ts-ignore */}
       </model-viewer>
     </div>
   );
