@@ -10,6 +10,7 @@ export default function Home() {
       {/* @ts-ignore */}
       <model-viewer
         src={MODEL_SRC}
+        ios-src={MODEL_SRC}
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
