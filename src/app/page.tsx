@@ -26,8 +26,9 @@ export default function Home() {
           slot="ar-button"
           style={{
             position: 'fixed',
-            bottom: '80px',
+            bottom: '180px',
             left: '50%',
+            transform: 'translateX(-50%)',
             backgroundColor: 'white',
             color: 'black',
             padding: '16px 32px',
