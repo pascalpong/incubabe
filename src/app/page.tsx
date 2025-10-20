@@ -25,37 +25,25 @@ export default function Home() {
         <button
           slot="ar-button"
           style={{
-            position: 'absolute',
-            bottom: '32px',
+            position: 'fixed',
+            bottom: '80px',
             left: '50%',
             transform: 'translateX(-50%)',
             backgroundColor: 'white',
             color: 'black',
-            padding: '12px 32px',
+            padding: '16px 32px',
             borderRadius: '50px',
             border: 'none',
             fontSize: '16px',
             fontWeight: '600',
-            zIndex: 100
+            zIndex: 9999,
+            boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
           }}
         >
           View in AR
         </button>
         {/* @ts-ignore */}
       </model-viewer>
-      
-      <div style={{
-        position: 'absolute',
-        top: '20px',
-        left: '20px',
-        color: 'white',
-        fontSize: '12px',
-        backgroundColor: 'rgba(255,255,255,0.1)',
-        padding: '8px 12px',
-        borderRadius: '4px'
-      }}>
-        Need iOS support? Add model.usdz to /public/models/
-      </div>
     </div>
   );
 }
