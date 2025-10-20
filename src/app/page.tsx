@@ -28,7 +28,6 @@ export default function Home() {
             position: 'fixed',
             bottom: '80px',
             left: '50%',
-            transform: 'translateX(-50%)',
             backgroundColor: 'white',
             color: 'black',
             padding: '16px 32px',
